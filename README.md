@@ -27,5 +27,15 @@ npm run tests
     ✓ should return south for north
     ✓ should return north east for south west
 
+  isAdjacentTo
+    x should be true for location to the north
+    x should be true for location to the south_east
+    ✓ should be false for same location
+
+  isCardinallyAdjacentTo
+    x should be true for location to the north
+    ✓ should be false for location to the south_east
+    ✓ should be false for same location
+
   <more output>
 ```
