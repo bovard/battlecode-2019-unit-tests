@@ -44,6 +44,7 @@ export class Direction {
         return this.ch;
     }
     isCardinal() {
+        // TODO: Implement me!  
         return false;
     }
     equals(other) {

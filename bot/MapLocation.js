@@ -20,9 +20,11 @@ export class MapLocation {
         return Math.pow(this.x - other.x, 2) + Math.pow(this.y - other.y, 2);
     }
     isAdjacentTo(other) {
+        // TODO: Implement me!  
         return false;
     }
     isCardinallyAdjacentTo(other) {
+        // TODO: Implement me!  
         return false;
     }
     directionTo(other) {
