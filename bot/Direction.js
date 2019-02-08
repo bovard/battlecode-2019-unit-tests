@@ -44,10 +44,7 @@ export class Direction {
         return this.ch;
     }
     isCardinal() {
-        if (Math.abs(this.dx) + Math.abs(this.dy) == 1) {
-            return true;
-        }
-        return false
+        return false;
     }
     equals(other) {
         return this.ch === other.ch

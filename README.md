@@ -2,6 +2,8 @@
 
 Some example units tests for MapLocation and Direction
 
+Note: There are some failing tests! You should fix them :)
+
 ## Installation
 First you'll need to install deps:
 ```

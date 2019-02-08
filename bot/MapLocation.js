@@ -20,13 +20,10 @@ export class MapLocation {
         return Math.pow(this.x - other.x, 2) + Math.pow(this.y - other.y, 2);
     }
     isAdjacentTo(other) {
-        if (this.equals(other)) {
-            return false
-        }
-        return Math.abs(this.x - other.x) <= 1 && Math.abs(this.y - other.y) <= 1;
+        return false;
     }
     isCardinallyAdjacentTo(other) {
-        return Math.abs(this.x - other.x) + Math.abs(this.y - other.y) === 1;
+        return false;
     }
     directionTo(other) {
         // degenerative case of the same location
