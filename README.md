@@ -1,10 +1,29 @@
 # battlecode-2019-unit-tests
 
 Some example units tests for MapLocation and Direction
-NOTE: you'll need to fill the function in themselves.
 
-To test:
+## Installation
+First you'll need to install deps:
 ```
 npm install
-npm run test
+```
+
+## Running Tests
+Then you can run the tests:
+```
+npm run tests
+```
+(see package.json for the actual mocha command)
+
+### Output
+```
+  isCardinal
+    ✓ should be true for north
+    ✓ should be false for north east
+
+  opposite
+    ✓ should return south for north
+    ✓ should return north east for south west
+
+  <more output>
 ```
