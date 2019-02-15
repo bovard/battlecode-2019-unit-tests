@@ -2,6 +2,7 @@ import { MapLocation } from './MapLocation';
 import { expect } from 'chai';
 import 'mocha';
 import { Direction } from './Direction';
+describe('MapLocation', () => {
 describe('equals', () => {
     const start = new MapLocation(20, 20);
     it('should return true for the same location', () => {
@@ -130,4 +131,5 @@ describe('directionTo', () => {
     it('should return south west correctly', () => {
         expect(start.directionTo(new MapLocation(9, 11)).equals(Direction.SOUTH_WEST)).to.be.true;
     });
+});
 });

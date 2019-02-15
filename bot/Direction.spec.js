@@ -1,6 +1,7 @@
 import { expect } from 'chai';
 import 'mocha';
 import { Direction } from './Direction';
+describe('Direction', () => {
 describe('isCardinal', () => {
     it('should be true for north', () => {
         expect(Direction.NORTH.isCardinal()).to.be.true;
@@ -70,4 +71,5 @@ describe('rotate90Left', () => {
     it('should return north east for south east ', () => {
         expect(Direction.SOUTH_EAST.rotate90Left()).to.equal(Direction.NORTH_EAST);
     });
+});
 });
