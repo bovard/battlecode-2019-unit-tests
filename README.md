@@ -39,3 +39,25 @@ npm run tests
 
   <more output>
 ```
+
+## Getting Unit Test Coverage
+Make sure to run `npm install` then run:
+```
+npm run coverage
+```
+
+which will produce output:
+
+```
+---------------------|----------|----------|----------|----------|-------------------|
+File                 |  % Stmts | % Branch |  % Funcs |  % Lines | Uncovered Line #s |
+---------------------|----------|----------|----------|----------|-------------------|
+All files            |    83.79 |    55.43 |      100 |    83.79 |                   |
+ Direction.js        |    59.57 |    45.95 |      100 |    59.57 |... 58,160,166,170 |
+ Direction.spec.js   |      100 |      100 |      100 |      100 |                   |
+ MapLocation.js      |    90.32 |    94.44 |      100 |    90.32 |           8,33,73 |
+ MapLocation.spec.js |      100 |      100 |      100 |      100 |                   |
+---------------------|----------|----------|----------|----------|-------------------|
+
+```
+can you increase the coverage for Direction.js?
